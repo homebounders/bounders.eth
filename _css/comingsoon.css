@@ -446,9 +446,9 @@ body.splat-toggle .splat {
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid var(--second-text-color);
     border-top: none;
-    border-radius: 15px 15px 0 0;
+    border-radius: 0 0 15px 15px;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     opacity: 0;
@@ -467,7 +467,7 @@ body.splat-toggle .splat {
 
 .music-container.play .music-info {
     opacity: 1;
-    transform: translateY(-124%);
+    transform: translateY(87px);
 }
 
 .progress-container {
