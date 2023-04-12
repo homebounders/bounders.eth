@@ -531,6 +531,23 @@ body.splat-toggle .splat {
     margin: 20px auto;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    position: relative;
+    background-color: var(--bg-color);
+}
+
+.footer-copyright {
+    text-align: center;
+}
+.footer-copyright p {
+    font-size: 1.6rem;
+}
+
 /* Bubbles + Animation */
 
 .bubbles {
