@@ -68,6 +68,7 @@ body {
 section {
     min-height: 100vh;
     padding: 10rem 7% 2rem;
+    overflow: hidden;
 }
 
 h1 {
@@ -108,19 +109,23 @@ div {
 }
 
 .header.sticky {
-    background: transparent;
+    background: rgba( 0, 0, 0, 0.7 );
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(7px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.logo {
+.logo-container {
     font-size: 4.7rem;
     font-weight: 600;
     font-family: "baron", sans-serif;
     color: var(--text-color);
     cursor: default;
     margin-right: auto;
+}
+
+.logo {
+    width: 250px;
 }
 
 /* Mobile Menu Icon */
@@ -558,16 +563,17 @@ div {
     align-items: center;
 }
 
-.social-media .social-media-icons {
+.social-media-icons {
     padding: 0;
     margin: 0;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-.social-media .social-media-icons a {
+.social-media-icons a {
     display: inline-flex;
     padding: 0;
     margin: auto 0.4rem;
@@ -581,26 +587,26 @@ div {
     transition: 0.5s;
     backdrop-filter: blur(7px);
 }
-.social-media .social-media-icons a:hover {
+.social-media-icons a:hover {
     background-color: var(--second-text-color);
     border-radius: 20px;
     box-shadow: 0 0 10px 0 var(--second-text-color);
 }
 
-.social-media-icons .twitter {
+.twitter {
     background: url("../_images/_nav/ugly-twitter.png") no-repeat;
     background-size: contain;
 }
-.social-media-icons .twitter:hover {
+.twitter:hover {
     background: url("../_images/_nav/ugly-twitter_hover.png") no-repeat;
     background-size: contain;
 }
 
-.social-media-icons .ens-updates {
+.ens-updates {
     background: url("../_images/_nav/ugly-ens-updates.png") no-repeat;
     background-size: contain;
 }
-.social-media-icons .ens-updates:hover {
+.ens-updates:hover {
     background: url("../_images/_nav/ugly-ens-updates_hover.png") no-repeat;
     background-size: contain;
 }
@@ -1169,6 +1175,7 @@ div {
 
 .problems-container p {
     font-size: 1.6rem;
+    text-align: center;
 }
 
 .problems-container img {
